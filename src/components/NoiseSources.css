@@ -1,0 +1,126 @@
+.noise-sources {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.noise-sources h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #61dafb;
+}
+
+.intro {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #a0a0a0;
+}
+
+.sources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.source-card {
+  background: rgba(26, 28, 32, 0.95);
+  border-radius: 15px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(97, 218, 251, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.source-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #61dafb, #4fa8d1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.source-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(97, 218, 251, 0.2);
+  border-color: rgba(97, 218, 251, 0.3);
+}
+
+.source-card:hover::before {
+  opacity: 1;
+}
+
+.source-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.source-card h3 {
+  color: #61dafb;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.source-description {
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.decibel-info {
+  background: rgba(97, 218, 251, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.decibel-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(97, 218, 251, 0.2);
+}
+
+.decibel-item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  color: #a0a0a0;
+}
+
+.decibel-value {
+  color: #61dafb;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .noise-sources {
+    padding: 1rem;
+  }
+
+  .sources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .source-card {
+    padding: 1.5rem;
+  }
+} 

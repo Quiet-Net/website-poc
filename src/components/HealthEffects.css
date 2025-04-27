@@ -1,0 +1,253 @@
+.health-effects {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.health-effects h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #61dafb;
+}
+
+.intro {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #a0a0a0;
+}
+
+.section-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.effect-sections {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.effect-section {
+  background: rgba(26, 28, 32, 0.95);
+  border-radius: 15px;
+  padding: 1.5rem;
+  border: 1px solid rgba(97, 218, 251, 0.1);
+  transition: all 0.3s ease;
+}
+
+.effect-section:hover {
+  transform: translateY(-5px);
+  border-color: rgba(97, 218, 251, 0.3);
+  box-shadow: 0 5px 15px rgba(97, 218, 251, 0.2);
+}
+
+.effect-section h4 {
+  color: #61dafb;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.effect-section p {
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.tabs-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tabs-header {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  background: rgba(26, 28, 32, 0.95);
+  border: 1px solid rgba(97, 218, 251, 0.1);
+  color: #a0a0a0;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tab-button:hover {
+  transform: translateY(-2px);
+  border-color: rgba(97, 218, 251, 0.3);
+  color: #61dafb;
+  box-shadow: 0 5px 15px rgba(97, 218, 251, 0.1);
+}
+
+.tab-button.active {
+  background: rgba(97, 218, 251, 0.1);
+  color: #61dafb;
+  border-color: rgba(97, 218, 251, 0.3);
+  box-shadow: 0 5px 15px rgba(97, 218, 251, 0.2);
+}
+
+.tab-icon {
+  font-size: 1.4rem;
+}
+
+.tab-content-container {
+  background: rgba(26, 28, 32, 0.95);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid rgba(97, 218, 251, 0.1);
+  transition: all 0.3s ease;
+}
+
+.tab-content {
+  animation: fadeIn 0.5s ease;
+}
+
+.tab-content h3 {
+  color: #61dafb;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.effect-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(97, 218, 251, 0.05);
+  margin-top: 1rem;
+}
+
+.effect-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.effect-card li {
+  margin: 0.8rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.effect-card li::before {
+  content: '•';
+  color: #61dafb;
+  position: absolute;
+  left: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-note {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(97, 218, 251, 0.05);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid rgba(97, 218, 251, 0.1);
+}
+
+.note-icon {
+  font-size: 1.8rem;
+  color: #61dafb;
+}
+
+.image-note p {
+  margin: 0;
+  color: #a0a0a0;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .health-effects {
+    padding: 1rem;
+  }
+
+  .tabs-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .tab-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tab-content-container {
+    padding: 1.5rem;
+  }
+
+  .effect-section {
+    padding: 1.2rem;
+  }
+
+  .effect-section h4 {
+    font-size: 1.2rem;
+  }
+
+  .effect-section p {
+    font-size: 1rem;
+  }
+
+  .effect-card {
+    padding: 1rem;
+  }
+
+  .effect-card li {
+    font-size: 1rem;
+  }
+
+  .section-intro {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .image-note {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.8rem;
+  }
+
+  .note-icon {
+    margin-bottom: 0.5rem;
+  }
+} 
