@@ -7,6 +7,7 @@ const HealthEffects = () => {
   const tabs = [
     { id: 'physical', label: 'Physical Health', icon: '🫀' },
     { id: 'mental', label: 'Mental Health', icon: '🧠' },
+    { id: 'psychological', label: 'Psychological Effects', icon: '🧩' },
     { id: 'sleep', label: 'Sleep & Rest', icon: '😴' },
     { id: 'productivity', label: 'Productivity', icon: '📊' },
     { id: 'animals', label: 'Effects on Animals', icon: '🦋' },
@@ -111,6 +112,22 @@ const HealthEffects = () => {
           </div>
         );
 
+      case 'psychological':
+        return (
+          <div className="tab-content psychological">
+            <h3>Psychological Effects</h3>
+            <div className="effect-section">
+              <p>
+                Noise pollution can cause stress, anxiety and other psychological effects, especially when the noise is continuous, loud or unpredictable. Prolonged exposure to noise pollution can lead to irritability, sleep disturbances and decreased concentration.<br/><br/>
+                The effects of noise pollution are even more pronounced when people are exposed to the noise for prolonged periods. One of the most common psychological effects of noise is stress. When people are exposed to loud or continuous noise, their bodies produce cortisol, the stress hormone. High levels of cortisol have a negative impact on health. This can lead to a range of mental and physical problems, including anxiety, depression and even heart disease.<br/><br/>
+                Besides stress and anxiety, noise pollution can also disrupt sleep. Even if the noise levels aren't high enough to wake you up, they can still cause disturbances that lead to fragmented sleep. This then can lead to sleep deprivation.<br/><br/>
+                When a person has poor sleep quality, they can experience problems with their physical and mental health. They might suffer irritability and decreased concentration and have reduced performance at school or work.<br/><br/>
+                In children, noise pollution can have an impact on their development. Over time, it can affect their ability to learn, concentrate and communicate. It can also lead to behavioural problems, including aggression and hyperactivity.
+              </p>
+            </div>
+          </div>
+        );
+
       case 'sleep':
         return (
           <div className="tab-content sleep">
@@ -125,6 +142,18 @@ const HealthEffects = () => {
                 <li>Sleep deprivation effects</li>
                 <li>Decreased recovery time</li>
               </ul>
+            </div>
+            <div className="effect-section">
+              <h4>Short-Term Effects of Noise</h4>
+              <p>
+                Getting sufficient undisturbed sleep is critical for feeling good and performing well. Although you are unlikely to notice subtle changes to your sleep structure and biochemical experience of sleep, these changes can manifest the next day in ways that are more pronounced. Sleepiness, irritability, and poorer mental health are associated with <a href="https://www.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">Trusted Source<br/>National Library of Medicine, Biotech Information</a>. Exposure to nighttime noise the night before can cause these effects.
+              </p>
+            </div>
+            <div className="effect-section">
+              <h4>Long-Term Effects of Noise</h4>
+              <p>
+                Poor quality sleep over a long period of time is linked with <a href="https://www.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">Trusted Source<br/>National Library of Medicine, Biotech Information</a> high blood pressure, heart disease, weight gain, type 2 diabetes, and certain types of cancer. The relationship between noise during sleep and long-term health effects is less clear, but studies indicate a possible association with high blood pressure, heart disease and stroke, increased use of sleep medications, and decreased overall health. <a href="https://www.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">View Source</a>
+              </p>
             </div>
           </div>
         );
