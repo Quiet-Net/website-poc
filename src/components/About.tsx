@@ -24,6 +24,18 @@ const About = () => {
           </p>
         </div>
       </div>
+      <div className="technologies-section">
+        <h2>Technologies in my project</h2>
+        <div className="technologies-logos">
+          <img src="/github-logo.png" alt="GitHub" height="60" />
+          <img src="/google-logo.png" alt="Google" height="60" />
+          <img src="/netlify-logo.png" alt="Netlify" height="60" />
+          <img src="/cursor-logo.png" alt="Cursor" height="60" />
+          <img src="/react-logo.png" alt="React" height="60" />
+          <img src="/html-css-logo.png" alt="HTML & CSS" height="60" />
+          <img src="/chat-gpt-logo.png" alt="ChatGPT" height="60" />
+        </div>
+      </div>
     </div>
   );
 };

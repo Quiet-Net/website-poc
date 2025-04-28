@@ -64,6 +64,34 @@
   font-style: italic;
 }
 
+.technologies-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.technologies-section h2 {
+  color: #61dafb;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.technologies-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.technologies-logos img {
+  height: 60px;
+  object-fit: contain;
+  background: white;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(97, 218, 251, 0.08);
+}
+
 @media (max-width: 768px) {
   .about {
     padding: 1rem;

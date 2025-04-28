@@ -173,17 +173,6 @@
   left: 100%;
 }
 
-.action-button.explore {
-  background: #61dafb;
-  color: #282c34;
-}
-
-.action-button.explore:hover {
-  background: #4fa8d1;
-  transform: translateY(-3px) scale(1.05);
-  animation: pulse 2s ease-in-out infinite;
-}
-
 .action-button.learn {
   background: transparent;
 }

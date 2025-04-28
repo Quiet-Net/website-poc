@@ -84,10 +84,7 @@ function App() {
             <p className="subtitle">Your peaceful corner of the internet</p>
             <div className="decorative-line"></div>
             <div className="button-container">
-              <button className="action-button explore">
-                Explore
-              </button>
-              <button className="action-button learn">
+              <button className="action-button learn" onClick={() => setActiveSection('health-effects')}>
                 Learn More
               </button>
             </div>
