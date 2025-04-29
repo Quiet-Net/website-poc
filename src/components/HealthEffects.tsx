@@ -97,17 +97,60 @@ const HealthEffects = () => {
         return (
           <div className="tab-content mental">
             <h3>Mental Health Impact</h3>
-            <div className="effect-card">
-              <ul>
-                <li>Increased stress levels</li>
-                <li>Anxiety disorders</li>
-                <li>Depression symptoms</li>
-                <li>Mood swings</li>
-                <li>Irritability</li>
-                <li>Emotional exhaustion</li>
-                <li>Social withdrawal</li>
-                <li>Increased aggression</li>
-              </ul>
+            <p className="section-intro">
+              Chronic exposure to urban noise is harmful not only for auditory perception but also affects cardiovascular, 
+              gastrointestinal, and nervous systems, while causing significant psychological distress.
+            </p>
+
+            <div className="effect-highlight">
+              According to EU studies, around 25% of the population experiences deterioration in quality of life due to noise-related 
+              annoyance, and about 5-15% suffer from sleep disorders, resulting in many disability-adjusted life years (DALYs) lost annually.
+            </div>
+
+            <div className="effect-sections">
+              <div className="effect-section">
+                <h4>Research Findings</h4>
+                <p>
+                  Studies across major databases (PubMed, Cochrane Library, Scopus) have shown that prolonged negative feelings 
+                  towards noise may increase the risk of severe psychological problems. The main sources of exposure include airports, 
+                  wind turbines, roads, and trains, with the majority of reported disorders dealing with annoyance and sleep 
+                  disturbances, often associated with cardiovascular symptoms.
+                </p>
+              </div>
+
+              <div className="effect-section">
+                <h4>Common Mental Health Issues</h4>
+                <div className="effect-card">
+                  <ul>
+                    <li>Increased stress levels</li>
+                    <li>Anxiety disorders</li>
+                    <li>Depression symptoms</li>
+                    <li>Mood swings</li>
+                    <li>Irritability</li>
+                    <li>Emotional exhaustion</li>
+                    <li>Social withdrawal</li>
+                    <li>Increased aggression</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="effect-section">
+                <h4>Impact on Daily Life</h4>
+                <p>
+                  Psychological distress has been recognized as a substantial public health problem and a leading cause of 
+                  morbidity and disability. Tiredness, headaches, and other psychological conditions are commonly associated 
+                  with noise exposure in adult populations.
+                </p>
+              </div>
+
+              <div className="effect-section">
+                <h4>EU Directives and Protection</h4>
+                <p>
+                  The EU has issued directives (2002/49/CE) aimed at avoiding, preventing, or reducing the harmful effects 
+                  of exposure to environmental noise. This includes determining noise exposure through acoustic mapping, 
+                  public information on noise effects, and the adoption of action plans.
+                </p>
+              </div>
             </div>
           </div>
         );
@@ -162,16 +205,74 @@ const HealthEffects = () => {
         return (
           <div className="tab-content productivity">
             <h3>Impact on Productivity</h3>
-            <div className="effect-card">
-              <ul>
-                <li>Reduced concentration</li>
-                <li>Decreased work performance</li>
-                <li>Memory problems</li>
-                <li>Learning difficulties</li>
-                <li>Lower cognitive function</li>
-                <li>Increased error rates</li>
-                <li>Communication difficulties</li>
-              </ul>
+            <p className="section-intro">
+              For some, noise pollution may be little more than a trivial annoyance. However, for the astute business owner, 
+              noise pollution can be a serious source of employee ill health, both physical and mental, as well as a real productivity killer.
+            </p>
+            <p className="section-intro">
+              Noise pollution occurs when there is an unwanted or disturbing sound that interferes with normal activities 
+              or diminishes quality of life.
+            </p>
+            <div className="effect-highlight">
+              The 2011 World Health Organisation report "Burden of Disease from environmental noise" looks at the relationship 
+              between environmental noise and health. They calculated that the financial cost of lost work days, healthcare treatment, 
+              impaired learning and decreased productivity came to $30.8 billion a year in Europe alone.
+            </div>
+            
+            <div className="effect-sections">
+              <h4>Six Ways Noise Pollution Affects Workplace Productivity</h4>
+              
+              <div className="effect-section">
+                <h5>1. Disruptions from Ambient Office Noise</h5>
+                <p>
+                  Ringing telephones, loud co-workers and the hum of general office life can cause frequent minor disruptions 
+                  which can amount to a significant loss in man hours.
+                </p>
+              </div>
+
+              <div className="effect-section">
+                <h5>2. Increased Blood Pressure</h5>
+                <p>
+                  Constant interruptions from sources of noise have been shown to cause long term health risks that you might 
+                  not otherwise associate with noise. The University of Michigan's Occupational Health Nursing Programme conducted 
+                  a study which found that chronic noise in the workplace can cause increased blood pressure and even heart disease.
+                </p>
+              </div>
+
+              <div className="effect-section">
+                <h5>3. Mental Health Problems</h5>
+                <p>
+                  Perhaps unsurprisingly, dealing with incessant noise pollution can take a toll on your employees' mental health. 
+                  Excessive or repetitive noises can cause moodiness, anxiety and even depression in workers.
+                </p>
+              </div>
+
+              <div className="effect-section">
+                <h5>4. Increased Workplace Accidents</h5>
+                <p>
+                  Excessive noise can cause workplace accidents and injuries in a variety of different ways. For example, workers 
+                  may not hear warning signals, or may not be able to think clearly due to the noise of their environment. This 
+                  is particularly true of industries such as construction.
+                </p>
+              </div>
+
+              <div className="effect-section">
+                <h5>5. Hearing Loss</h5>
+                <p>
+                  The Occupational Safety and Health Administration reports that one of the foremost occupational concerns is 
+                  hearing loss caused by excessive noise in the working environment. A vast proportion of this hearing loss is 
+                  preventable through ensuring safety measures such as wearing earplugs or reducing noise volume are adhered to.
+                </p>
+              </div>
+
+              <div className="effect-section">
+                <h5>6. Increased Errors</h5>
+                <p>
+                  The likelihood of mistakes and general error is vastly increased in a noisy environment and can be a material 
+                  issue in causing staff burnout. Consistent distracting noises and high levels of burnout can also lead to 
+                  high blood pressure and stress.
+                </p>
+              </div>
             </div>
           </div>
         );
